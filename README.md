@@ -8,4 +8,4 @@
 
  4->then we will make controlers addschool lisofschools and also make utils folder ans make the distanceCalculator and import them into controlers
 
- 5->
+ 5->all things working good test the things on postman 

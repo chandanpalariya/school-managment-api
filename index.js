@@ -3,9 +3,21 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv'
 import schoolRoutes from './routes/schoolRoutes.js';
 
-const app=express;
+
+dotenv.config();
 
 
+const app=express();
+
+
+//connection
+
+
+
+
+//middleware
+app.use(express.json());
+app.use(bodyParser.json());
 
 
 //routes
@@ -14,5 +26,6 @@ app.use('/',schoolRoutes);
 
 
 const PORT=process.env.PORT||8000;
+console.log(PORT)
 
-app.listen(()=>console.log(`server started at ${port}`));
+app.listen(()=>console.log(`server started at ${PORT}`));

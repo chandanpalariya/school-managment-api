@@ -23,7 +23,7 @@ export const addSchool = async (req, res) => {
     res.status(201).json({ message: 'School added successfully ✅' });
   } catch (error) {
     console.error('Error in addSchool:', error.message);
-    res.status(500).json({ message: 'Server error ❌' });
+    res.status(500).json({ message: 'Server error ' });
   }
 };
 
@@ -52,6 +52,6 @@ export const listSchools = async (req, res) => {
     res.json(schoolsWithDistance);
   } catch (error) {
     console.error('Error in listSchools:', error.message);
-    res.status(500).json({ message: 'Server error ❌' });
+    res.status(500).json({ message: 'Server error ' });
   }
 };

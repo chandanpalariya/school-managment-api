@@ -1,4 +1,5 @@
 import express from "express";
+import { addSchool,listSchools } from "../controlers/schoolControlers.js";
 
 const router = express.Router();
 
