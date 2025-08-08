@@ -1,15 +1,11 @@
-
-
-import express from 'express';
-
-
+import express from "express";
 
 const router = express.Router();
 
 // add school
-router.post('/addSchool', addSchool);
+router.post("/addSchool", addSchool);
 
 // list school
-router.get('/listSchools', listSchools);
+router.get("/listSchools", listSchools);
 
 export default router;

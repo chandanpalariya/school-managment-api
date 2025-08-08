@@ -6,6 +6,8 @@ import schoolRoutes from './routes/schoolRoutes.js';
 const app=express;
 
 
+
+
 //routes
 
 app.use('/',schoolRoutes);
